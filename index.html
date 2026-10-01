@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Muhammad Azeem — Unity Game Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1A1420;
+    --ink-2: #241C2C;
+    --paper: #F1ECE4;
+    --paper-dim: #B8AFC2;
+    --gold: #E3B23C;
+    --sage: #8CAE9A;
+    --line: #3A2E44;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--paper);
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    -webkit-font-smoothing: antialiased;
+  }
+  .display { font-family: 'Space Grotesk', Arial, sans-serif; }
+
+  .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 80px; }
+
+  .hero-eyebrow {
+    color: var(--gold);
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 0 0 14px;
+  }
+  h1.name {
+    font-size: clamp(2.4rem, 7vw, 4rem);
+    font-weight: 700;
+    line-height: 1.02;
+    margin: 0 0 18px;
+    letter-spacing: -0.01em;
+  }
+  .bio {
+    color: var(--paper-dim);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 54ch;
+    margin: 0 0 30px;
+  }
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 22px;
+    font-size: 0.92rem;
+  }
+  .contacts a, .contacts span {
+    color: var(--paper);
+    text-decoration: none;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 1px;
+  }
+  .contacts a:hover { border-color: var(--gold); color: var(--gold); }
+
+  .stats {
+    display: flex;
+    margin: 52px 0 8px;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  .stat {
+    flex: 1;
+    padding: 22px 18px;
+    border-right: 1px solid var(--line);
+  }
+  .stat:last-child { border-right: none; }
+  .stat .num {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat .label {
+    color: var(--paper-dim);
+    font-size: 0.82rem;
+    margin-top: 6px;
+  }
+
+  section { margin-top: 56px; }
+  h2.section-title {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+  .section-sub {
+    color: var(--paper-dim);
+    font-size: 0.88rem;
+    margin: 0 0 18px;
+  }
+
+  ul.game-list { list-style: none; margin: 0; padding: 0; }
+  ul.game-list li { border-bottom: 1px solid var(--line); }
+  ul.game-list li:first-child { border-top: 1px solid var(--line); }
+  ul.game-list a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 4px;
+    text-decoration: none;
+    color: var(--paper);
+    transition: padding-left 0.15s ease, color 0.15s ease;
+  }
+  ul.game-list a:hover {
+    padding-left: 10px;
+    color: var(--gold);
+  }
+  ul.game-list .title { font-size: 1rem; font-weight: 500; }
+  ul.game-list .go {
+    color: var(--paper-dim);
+    font-size: 1rem;
+    flex-shrink: 0;
+  }
+  ul.game-list a:hover .go { color: var(--gold); }
+
+  footer {
+    margin-top: 72px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    color: var(--paper-dim);
+    font-size: 0.85rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  footer a { color: var(--sage); text-decoration: none; }
+  footer a:hover { color: var(--gold); }
+
+  @media (max-width: 520px) {
+    .stats { flex-wrap: wrap; }
+    .stat { flex: 1 1 50%; border-bottom: 1px solid var(--line); }
+    .stat:nth-child(2) { border-right: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="hero-eyebrow display">Portfolio</p>
+  <h1 class="name display">Muhammad<br>Azeem</h1>
+  <p class="bio">Unity Game Developer based in Lahore, Pakistan. Builds 2D and 3D games in C# from first prototype to store release — gameplay systems, monetization, and performance tuning across Android, iOS, and Amazon Appstore.</p>
+  <div class="contacts">
+    <a href="mailto:azeemmalik167@gmail.com">azeemmalik167@gmail.com</a>
+    <span>+92 331 1146493</span>
+    <a href="https://www.linkedin.com/in/azeem-malik-855bb7211" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="num display">30+</div>
+      <div class="label">games shipped</div>
+    </div>
+    <div class="stat">
+      <div class="num display">3</div>
+      <div class="label">platforms</div>
+    </div>
+    <div class="stat">
+      <div class="num display">6</div>
+      <div class="label">studios &amp; teams</div>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="section-title display">Google Play</h2>
+    <p class="section-sub">Published for Sysmatixx</p>
+    <ul class="game-list">
+      <li><a href="https://play.google.com/store/apps/details?id=com.AestheticGames.asmrmaster.foodgames.eatinggames" target="_blank" rel="noopener"><span class="title">Mukbang Master: ASMR DIY Food</span><span class="go">↗</span></a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.Sysmatixx.RebuildWithMe" target="_blank" rel="noopener"><span class="title">Rebuild With Me</span><span class="go">↗</span></a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=com.Sysmatixx.WaningRift" target="_blank" rel="noopener"><span class="title">Waning Rift</span><span class="go">↗</span></a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title display">Amazon Appstore</h2>
+    <p class="section-sub">Simulation titles</p>
+    <ul class="game-list">
+      <li><a href="https://www.amazon.com/Electronic-Shopping-Super-Supermarket-Simulator/dp/B0DD7QLK5G" target="_blank" rel="noopener"><span class="title">Electronic Store Simulator 3D</span><span class="go">↗</span></a></li>
+      <li><a href="https://www.amazon.com/Supermarket-Store-Manager-Simulator-Market/dp/B0DF7TMGWB" target="_blank" rel="noopener"><span class="title">Supermarket Store Manager Simulator</span><span class="go">↗</span></a></li>
+      <li><a href="https://www.amazon.com/Fruit-Shop-Simulator-Supermarket-Empire/dp/B0DFQC5F52" target="_blank" rel="noopener"><span class="title">Fruit Shop Simulator</span><span class="go">↗</span></a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title display">App Store</h2>
+    <p class="section-sub">18 iOS titles across simulation, casual, and life-sim genres</p>
+    <ul class="game-list">
+      <li><a href="https://apps.apple.com/us/app/car-market-sale-buy-game/id6720729590" target="_blank" rel="noopener"><span class="title">Car Market: Sale &amp; Buy Game</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/g-t-s-fallen-gangster-games/id6753941233" target="_blank" rel="noopener"><span class="title">G.T.S Fallen Gangster Games</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/99-forest-nights-survival/id6755247491" target="_blank" rel="noopener"><span class="title">99 Forest Nights: Survival</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/police-simulator-missing-case/id6755693857" target="_blank" rel="noopener"><span class="title">Police Simulator: Missing Case</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/stray-cat-i-am-pet-cat/id6756076203" target="_blank" rel="noopener"><span class="title">Stray Cat: I Am Pet Cat</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/twins-babysitter-newborn-games/id1620346582" target="_blank" rel="noopener"><span class="title">Twins Babysitter Newborn</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/electronic-tech-house-manager/id6651841077" target="_blank" rel="noopener"><span class="title">Electronic Tech House Manager</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/happy-animals-zoo-keeper-games/id6443542047" target="_blank" rel="noopener"><span class="title">Happy Animals Zoo keeper</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/anime-high-school-days-life-3d/id1607506798" target="_blank" rel="noopener"><span class="title">Anime High School Days Life 3D</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/princess-mermaid-simulator-3d/id1336395237" target="_blank" rel="noopener"><span class="title">Princess Mermaid Simulator 3D</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/power-wash-simulator-gun-games/id1612819170" target="_blank" rel="noopener"><span class="title">Power Wash Simulator Gun</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/dream-hospital-game-doctor-sim/id1628529988" target="_blank" rel="noopener"><span class="title">Dream Hospital Game Doctor Simulator</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/mother-life-simulator-games-23/id6445950903" target="_blank" rel="noopener"><span class="title">Mother Life Simulator Games 23</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/pk/app/gun-runner-gun-sprint-weapon/id6466629107" target="_blank" rel="noopener"><span class="title">Gun Runner: Gun Sprint Weapon</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/manager-3d-supermarket-sim/id6670207425" target="_blank" rel="noopener"><span class="title">Manager 3D: Supermarket Sim</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/car-crash-simulator-games-2023/id6451199450" target="_blank" rel="noopener"><span class="title">Car Crash Simulator Games 2023</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/real-airplane-flight-sim-games/id1620349934" target="_blank" rel="noopener"><span class="title">Real Airplane Flight Simulator</span><span class="go">↗</span></a></li>
+      <li><a href="https://apps.apple.com/us/app/police-car-chase-hot-pursuit/id1238078107" target="_blank" rel="noopener"><span class="title">Police Car Chase: Hot Pursuit</span><span class="go">↗</span></a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="section-title display">Projects</h2>
+    <p class="section-sub">Independent build</p>
+    <ul class="game-list">
+      <li><a href="https://drive.google.com/drive/folders/1VT0uxHn2BkxQcBxnjNJcHvOxBirOK46-" target="_blank" rel="noopener"><span class="title">Ludo Game Multiplayer — 3D multiplayer board game</span><span class="go">↗</span></a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <span>Muhammad Azeem, Lahore, Pakistan</span>
+  </footer>
+
+</div>
+
+</body>
+</html>
